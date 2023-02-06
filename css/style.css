@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    
+    font-family: 'Lexend Deca', sans-serif;
+}
+body
+{
+    background-color: hsl(0, 0%, 95%);
+}
+.main-container
+{
+    height: 100vh ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+.parent
+{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    height: 420px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0,0,-10,20,black;
+}
+.card1
+{
+    background-color: hsl(31, 77%, 52%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(700px/3);
+}
+.card2
+{
+    background-color: hsl(184, 100%, 22%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(700px/3);
+}
+.card3
+{
+    background-color: hsl(179, 100%, 13%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(700px/3);
+}
+h1
+{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+p
+{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: hsla(0, 0%, 100%, 0.75);
+
+}
+.btn1 , .btn2 ,.btn3
+{
+    border: hsl(0, 0%, 95%) 2px solid;
+    background-color: hsl(0, 0%, 95%);
+    padding: 13px;
+    width: 80%;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+.btn1
+{
+    color: hsl(31, 77%, 52%);
+}
+.btn2
+{
+    color: hsl(184, 100%, 22%);
+}
+.btn3
+{
+    color: hsl(179, 100%, 13%);
+}
+.btn1:hover , .btn2:hover , .btn3:hover
+{
+    border: white 2px solid;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media (max-width:580px)
+{
+    .parent
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: min-content;
+        border-radius:10px;
+        overflow: hidden;
+        height: auto;
+    }
+
+    .main-container
+    {
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
